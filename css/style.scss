@@ -2,8 +2,90 @@
 @import '_fonts';
 body {
     background-color: red;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
 }
-span {
-    font-family: 'Roboto';
+.wrap {
+    max-width: 1170px;
+    width: 61%;
+    margin: 0 auto;
+}
+.preheader {
+    background-color: #EEEEEE;
+    font-size: 16px;
     font-weight: 400;
+    color: #333333;
+    line-height: 60px;
+    font-family: "Roboto";
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        display: flex;
+        li {
+            margin-right: 20px;
+        }
+    }
+    a {
+        color: #333333;
+        text-decoration: none;
+    }
+    .active {
+        color: #0EAE9E;;
+    }
+    .options {
+        display: flex;
+        justify-content: space-between;
+        width: 200px;
+    }
+    .sign-in {
+        img {
+            margin-bottom: -5px;
+            padding-left: 10px;
+        }
+    }
+    .lang {
+        position: relative;
+        cursor: pointer;
+        img {
+            padding-left: 13px;
+            padding-bottom: 2px;
+        }
+    }
+    .lang:hover .lang-hidden {
+        display: block;
+    }
+    .lang-hidden {
+        position: absolute;
+        display: none;
+        border-top: 15px solid #EEEEEE;
+        border-bottom: 15px solid #EEEEEE;
+        border-radius: 15px;
+        right: -7px;
+        top: 67px;
+        li {
+            cursor: pointer;
+            background-color: #fff;
+            line-height: 30px;
+            padding: 0 64px;
+        }
+        li:hover {
+            background-color: #0EAE9E;
+            color: #FFFFFF;
+        }
+        li:nth-of-type(2) {
+            border-top: 1px solid #EEEEEE;
+            border-bottom: 1px solid #EEEEEE;
+        }
+    }
+    .lang-hidden::before {
+        content: "";
+        position: absolute;
+        height: 7px;
+        width: 13px;
+        background-image: url('../img/top-triangle.png');
+        top:-22px;
+        left: 80%;
+    }
 }
