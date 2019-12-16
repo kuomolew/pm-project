@@ -442,6 +442,7 @@ header .header-cart img {
     line-height: .7;
     padding-top: 8px;
     margin: 20px auto 0 auto;
+    background-color: #EEEEEE;
 }
 
 .category .category-all > a {
