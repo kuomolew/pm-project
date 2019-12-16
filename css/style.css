@@ -748,6 +748,36 @@ header .header-cart img {
     display: none;
 }
 
+.content .content-item:hover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.content .content-item:hover .price {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content .content-item:hover .content-item-buy {
+    display: block;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FE4690;
+    font-size: 16px;
+    padding-top: 6px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-top: -5px;
+}
+
+.content .content-item:hover .content-item-buy:hover {
+    background-color: #E21A91;
+}
+
 .content #discounts-content .content-item-label {
     background-image: url("../img/category-tab-small-red.png");
 }
